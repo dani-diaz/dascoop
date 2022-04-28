@@ -88,3 +88,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+var port = normalizePort(process.env.PORT || '3000');
