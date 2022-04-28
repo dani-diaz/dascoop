@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+label {
+  color: red;
+}
+
+#restaurant-detail-page {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  gap: .5rem;
+}

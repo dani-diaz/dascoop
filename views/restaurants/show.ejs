@@ -1,0 +1,73 @@
+<%- include('../partials/header') %>
+
+<section id="restaurant-detail-page">
+  <div>Title: </div>
+  <div><%= restaurant.title %></div>
+  <div>Restaurant Location: </div>
+  <div><%= restaurant.restLocation %></div>
+  <div>Cuisine: </div>
+  <div><%= restaurant.foodType %></div>
+  <div><a href="<%= restaurant.restWeb %>">Restaurant Website</a></div>
+ <a href="/restaurants/<%= restaurant._id %>/edit">EDIT INFO</a>
+</section>
+
+<br><br>
+<h2>Reviews</h2>
+<% if (user) { %>
+  <form id="add-review-form" method="POST" action="/restaurants/<%= restaurant._id %>/reviews">
+    <label>Review:</label>
+    <textarea name="content"></textarea>
+    <label>Rating:</label>
+    <select name="rating">
+      <option value="⭐️">⭐️</option>
+      <option value="⭐️⭐️">⭐️⭐️</option>
+      <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+      <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+      <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+    </select>
+    <label for=""></label>
+    <input type="submit" value="Add Review">
+  </form>
+<% } %>
+
+<% if (restaurant.reviews.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Date</th>
+        <th>Review</th>
+        <th>Rating</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let total = 0 %>
+      <% restaurant.reviews.forEach(function(r) { %>
+        <% total += r.rating.length / 2 %>
+        <tr>
+          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"><%= r.userName %></td>
+          <td><%= r.createdAt.toLocaleDateString() %></td>
+          <td><%= r.content %></td>
+          <td><%= r.rating %></td>
+          <td>
+            <% if (user && user._id.equals(r.user)) { %>
+              <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                <button type="submit">DELETE REVIEW</button>
+              </form>
+            <% } %>
+          </td>
+        </tr>
+      <% }); %>
+      <tr>
+        <td colspan="3"></td>
+        <td><strong><%= (total / restaurant.reviews.length).toFixed(1) %>⭐️</strong></td>
+      </tr>
+    </tbody>
+  </table>
+<% } else { %>
+  <h5>No Reviews Yet</h5>
+<% } %>
+
+
+<%- include('../partials/footer') %>

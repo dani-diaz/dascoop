@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+ <title></title>
+<form id="new-form" action="/restaurants" method="POST">
+    <label>Title:</label>
+    <input type="text" name="title" required>
+    <label>Restaurant Location:</label>
+    <input type="text" name="restLocation" required>
+    <label>Restaurant Website:</label>
+    <input type="text" name="restWeb" required>
+    <label>Cuisine</label>
+    <select name="foodType">
+      <option value="American">American</option>
+      <option value="Italian">Italian</option>
+      <option value="Asian">Asian</option>
+      <option value="Latin">Latin</option>
+      <option value="Fast Food">Fast Food</option>
+      <option value="Unknown">Unknown</option>
+    </select>
+    <label for=""></label>
+    <input type="submit" value="Add Restaurant">
+  </form>
+  
+<%- include('../partials/footer') %>
