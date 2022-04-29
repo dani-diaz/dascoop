@@ -1,6 +1,9 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: scroll;
 }
 
 a {
@@ -14,14 +17,15 @@ form {
 }
 
 label {
-  color: red;
+  color: black;
 }
 
 #restaurant-detail-page {
   display: grid;
   grid-template-columns: 10rem auto;
   gap: .5rem;
-  background-color: green;
+  background-color: lightblue;
+ 
 }
 nav {
   display: flex;
@@ -29,4 +33,18 @@ nav {
   align-items: center;
   justify-content: space-between;
   align-content: center;
+  background-color: white;
+}
+
+#homepage {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.imgur.com/m1HGknu.jpg");
+  object-position: center;
+  object-fit: fill;
+  background-position: center;
+}
+
+main {
+  height: 100%;
 }
