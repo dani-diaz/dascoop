@@ -30,12 +30,15 @@ https://dascoop.herokuapp.com/
 <details>
 <summary> 📋 How to use site</summary>
 
-🏁 Start the game by flipping a card. 
+🏁 All Restaurants button gives you a list of existing restaurants where the user can read their existing reviews or add their own.
 
-🖱 Then try to find another card that has the same image
-as the first. If you can't find a pair, the flipped cards will be flipped back with the face down. 
 
-🤓 Try to remember these images as it becomes easier to find pairs the longer you play.
+🖱 ADD RESTAURANT button allows the user to create a new restaurant and also leave a review if the choose to, however they have to be logged in using google login.
+
+
+⭐️ STAR RATING is how the restaurants are rated on the customer reviews from 1 to 5 stars.
+
+
 </details>
 
 <br>
@@ -46,12 +49,12 @@ as the first. If you can't find a pair, the flipped cards will be flipped back w
 
 <img src="https://i.imgur.com/rK0TM7y.png" width="600">  
 
-<h4 align="center">The Game Board</h4>
+<h4 align="center">The Website</h4>
 
- <img src="https://i.imgur.com/j2YLOAT.png" width="600"> 
- <img src="https://i.imgur.com/rgxiftg.png" width="600"> 
-
-
+ <img src="https://i.imgur.com/F4xeuBX.jpg" width="600"> 
+ <img src="https://i.imgur.com/sFwxygZ.png" width="600"> 
+ <img src="https://i.imgur.com/dHcPF4C.png" width="600"> 
+ <img src="https://i.imgur.com/YswQmxh.png" width="600"> 
 <h1>  
 </h1>
 <h1>  
@@ -59,7 +62,15 @@ as the first. If you can't find a pair, the flipped cards will be flipped back w
 
 <h2 align="center">Technologies Used </h2>
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)  ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3) ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
+![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-333?style=flat&logo=bootstrap)
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongoDB)
+![Node.js](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
+![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello)
 
