@@ -30,13 +30,14 @@ https://dascoop.herokuapp.com/
 <details>
 <summary> 📋 How to use site</summary>
 
-🏁 All Restaurants button gives you a list of existing restaurants where the user can read their existing reviews or add their own.
+🏁 ALL RESTAURANTS button gives you a list of existing restaurants where the user can read their existing reviews or add their own.
 
 
 🖱 ADD RESTAURANT button allows the user to create a new restaurant and also leave a review if the choose to, however they have to be logged in using google login.
 
 
 ⭐️ STAR RATING is how the restaurants are rated on the customer reviews from 1 to 5 stars.
+
 
 
 </details>
