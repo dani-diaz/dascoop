@@ -21,4 +21,12 @@ label {
   display: grid;
   grid-template-columns: 10rem auto;
   gap: .5rem;
+  background-color: green;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }

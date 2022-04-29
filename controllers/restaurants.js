@@ -5,7 +5,8 @@ module.exports = {
   new: newRestaurant,
   show,
   create,
-  edit
+  edit,
+  update
 };
 
 function index(req, res) {
@@ -39,4 +40,18 @@ function edit(req, res) {
   Restaurant.findById(req.params.id, function(err, restaurant) {
     res.render('restaurants/edit', { title: 'Edit Restaurant Info', restaurant });
   });
+}
+
+function update(req, res) {
+  Restaurant.findOneAndUpdate(
+    {_id: req.params.id, user: req.user._id},
+    // update object with updated properties
+    req.body,
+    // options object with new: true to make sure updated doc is returned
+    {new: true},
+    function(err, restaurant) {
+      if (err || !restaurant) return res.redirect('/restaurants');
+      res.redirect(`/restaurants/${restaurant._id}`);
+    }
+  );
 }
